@@ -1,0 +1,68 @@
+h2, h3, h4, p {
+  font-size: 16px;
+  color: #212529;
+}
+a {
+  text-decoration:none;
+}
+.menu {
+  width: 296px;
+  background: #F8F9FA;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .logo {
+    display: block;
+    width: 151px;
+    height: 40px;
+    background: url('../../../assets/images/logo-ANSWER.svg');
+    text-indent:101%;
+    overflow:hidden;
+    white-space:nowrap;
+    margin: 32px;
+  }
+  ul {
+    list-style-type: none;
+    li {
+      display: flex;
+      margin-bottom: 22px;
+      border-left: 4px solid transparent;
+      &:hover {
+        border-left: 4px solid #198754;
+      }
+      &:hover h2, &:hover span {
+        color: #198754;
+      }
+      h2 {
+        font-weight: 700;
+        margin-bottom: 0;
+      }
+      span {
+        margin-right: 16px;
+        margin-left: 28px;
+      }
+    }
+  }
+}
+.user {
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+  h4 {
+    font-weight: 700;
+  }
+  p {
+    line-height: 24px;
+    color: #6C757D;
+  }
+}
+.main {
+  padding: 32px;
+  width: calc(100vw - 296px);
+}
